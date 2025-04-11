@@ -121,7 +121,7 @@ export default function PlayerSelect() {
                     <Button
                         key={defender.playerId}
                         size={"attack"}
-                        className={`bg-center bg-cover ${defender.agent ? `agent-model-${defender.agent}`: 'agent-model-jett'}`}
+                        className={`bg-center bg-cover ${defender.agent ? `agent-model-${defender.agent}`: 'agent-model-sage'}`}
                         onClick={() => setCurrentPlayer('defend')}>
                     </Button>
                     <h1 className={"text-4xl font-extrabold lg:text-4xl text-[#EBE8DB] text-center"}>Defender</h1>
