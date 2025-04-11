@@ -103,8 +103,7 @@ export default function PlayerSelect() {
                     <Button
                         key={attacker.playerId}
                         size={"attack"}
-                        className={`bg-center bg-cover`}
-                        style={{backgroundImage: `url('./assets/agents/${attacker.agent ? attacker.agent : "jett"}/model.png')`}}
+                        className={`bg-center bg-cover ${attacker.agent ? `agent-model-${attacker.agent}`: 'agent-model-jett'}`}
                         onClick={() => setCurrentPlayer('attack')}>
                     </Button>
                     <h1 className={"text-4xl font-extrabold lg:text-4xl text-[#EBE8DB] text-center"}>Attacker</h1>
@@ -122,8 +121,7 @@ export default function PlayerSelect() {
                     <Button
                         key={defender.playerId}
                         size={"attack"}
-                        className={`bg-center bg-cover`}
-                        style={{backgroundImage: `url('./assets/agents/${defender.agent ? defender.agent : "jett"}/model.png')`}}
+                        className={`bg-center bg-cover ${defender.agent ? `agent-model-${defender.agent}`: 'agent-model-jett'}`}
                         onClick={() => setCurrentPlayer('defend')}>
                     </Button>
                     <h1 className={"text-4xl font-extrabold lg:text-4xl text-[#EBE8DB] text-center"}>Defender</h1>

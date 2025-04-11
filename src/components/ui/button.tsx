@@ -56,13 +56,12 @@ export interface ButtonProps
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps & ButtonIconProps>(
     ({ className, variant, size, asChild = false, agent: agent = 'sage', tile, ...props }, ref) => {
-      const Comp = asChild ? Slot : "button"
-      const style = {backgroundImage: size === 'agent'?`url('./assets/agents/${agent}/avatar.png')`:"", backgroundSize:"cover"};
+      const Comp = asChild ? Slot : "button";
+      const bgClass = size === 'agent' ? `agent-bg-${agent} agent-bg-common` : '';
       return (
           <Comp
-              className={cn(buttonVariants({ variant, size, className, tile }))}
+              className={cn(buttonVariants({ variant, size, className, tile }), bgClass)}
               ref={ref}
-              style={style}
               {...props}
           />
       )

@@ -5,6 +5,15 @@
 .agent-bg-phoenix { background-image: url('./assets/agents/phoenix/avatar.png'); }
 .agent-bg-sage { background-image: url('./assets/agents/sage/avatar.png'); }
 .agent-bg-sova { background-image: url('./assets/agents/sova/avatar.png'); }
+
+.agent-model-astra { background-image: url('./assets/agents/astra/model.png'); }
+.agent-model-breach { background-image: url('./assets/agents/breach/model.png'); }
+.agent-model-brim { background-image: url('./assets/agents/brim/model.png'); }
+.agent-model-jett { background-image: url('./assets/agents/jett/model.png'); }
+.agent-model-phoenix { background-image: url('./assets/agents/phoenix/model.png'); }
+.agent-model-sage { background-image: url('./assets/agents/sage/model.png'); }
+.agent-model-sova { background-image: url('./assets/agents/sova/model.png'); }
+
 /* Repeat for each agent */
 .agent-bg-common {
   background-size: cover;
